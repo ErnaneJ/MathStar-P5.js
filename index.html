@@ -1,0 +1,170 @@
+<!DOCTYPE html><html lang="en"><head>  
+    <script src="p5.js"></script>
+    <script src="p5.dom.js"></script>
+    <script src="js/game.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <meta charset="utf-8">
+
+    <title>Math Star</title>
+    <link rel="sortcut icon" href="imagens/imgpag/logo1.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700|Pacifico" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+  </head>
+  <body>
+    <script> 
+      document.querySelector('body').addEventListener('keydown', function(event) {
+ 
+	var tecla = event.keyCode;
+	
+	 if(tecla == 32) {
+	 
+	 // tecla SPACE
+       event.preventDefault();
+		
+	} else if(tecla == 37) {
+	 
+	 // seta pra ESQUERDA
+      event.preventDefault();
+		
+	} else if(tecla == 38) {
+	 
+	 // seta pra CIMA
+      event.preventDefault();
+		
+	} else if(tecla == 39) {
+	 
+	 // seta pra DIREITA
+      event.preventDefault();
+		
+	} else if(tecla == 40) {
+	 
+	 // seta pra BAIXO
+      event.preventDefault();
+		
+	}
+});
+    </script>
+    
+    <nav id="nav">
+      <a href="https://editor.p5js.org/ernane.junior25/present/8LRIMXu4Nl"><img src="imagens/imgpag/logo.png" width="150" height="75" alt="Math Star"></a>
+      <ul>
+        <li><a href="https://editor.p5js.org/ernane.junior25/present/8LRIMXu4Nl#sobre">SOBRE</a></li>
+        <li><a href="https://editor.p5js.org/ernane.junior25/present/8LRIMXu4Nl#comojogar">COMO JOGAR</a></li>
+        <li><a href="https://editor.p5js.org/ernane.junior25/present/8LRIMXu4Nl#jogo">JOGO</a></li>
+        <li><a href="https://editor.p5js.org/ernane.junior25/present/8LRIMXu4Nl#desenvolvedores">DESENVOLVEDORES</a></li>
+      </ul>
+    </nav>
+    
+    <header>
+      <h1>Math Star</h1>
+      <p>O perfeito lugar onde o verdadeiro herói é a Matemática!</p>
+    </header>
+    
+    <section id="sobre">
+      <h2>SOBRE</h2>
+      <p>Jogo divertido inpirado na serie de filmes Star Wars. Neste jogo você deverá resolver problemas propostos pela utilização de fatos básicos da multiplicação com base na tabuada de multiplicação que é uma tabela usada para definir uma operação de multiplicação de um sistema algébrico. Sabendo a resposta correta de modo mental ou escrito, o objetivo é atirar os projéteis na nave que tiver a resposta. <a href="http://www.colabeduc.org/projeto/show/296" target="_blank">Habilidades:</a> (EF03MA07) Resolver e elaborar problemas de multiplicação (por 2, 3, 4, 5 e 10) com os significados de adição de parcelas iguais e elementos apresentados em disposição retangular, utilizando diferentes estratégias de cálculo e registros e (EF03MA03) Construir e utilizar fatos básicos da adição e da multiplicação para o cálculo mental ou escrito.</p>
+      <a href="https://editor.p5js.org/ernane.junior25/present/8LRIMXu4Nl#nav" onclick="toggle();" class="botao">Ver Mais</a>
+    </section>
+    
+    <section id="comojogar">
+      <h2>COMO JOGAR</h2>
+      <div>
+        <img src="imagens/imgpag/wasd.png" alt="Teclas W, A, S e D">
+        <h3>Teclas W, A, S e D</h3>
+        <p>Você tem a opção de mover a incrível Milenium Falcom pelas teclas W, A, S e D.</p>
+      </div>
+      
+      <div>
+        <img src="imagens/imgpag/arrows.png" alt="setas do teclado">
+        <h3>Setas do Teclado</h3>
+        <p>Ou ainda, movimentar-se pelas tradicionais setas to teclado.</p>
+      </div>
+      
+      <div>
+        <img src="imagens/imgpag/space.png" alt="SPACE">
+          <h3>SPACE
+        </h3>
+        <p>Detone as naves inimigas apertando a tecla SPACE para liberar todo o seu poder de fogo.</p>
+      </div>
+    </section>
+    
+    <section id="jogo">
+      <h2>JOGO</h2>
+      <div id="game">
+      </div>    
+    </section>
+    
+    <section id="desenvolvedores">
+    <h2>DESENVOLVEDORES</h2>
+      <p>O jogo foi realizado como projeto final da matéria de Lógica de Programação | ECT-UFRN.</p>     
+      <div class="container">
+        <div class="card">
+          <div class="content">
+            <div class="imgBx"><img src="imagens/imgpag/eu.jpg" width="150" height="150" alt="Programador"></div>
+            <div class="contentBx"><h3>Ernane Ferreira<br><spam>Programador</spam></h3></div>
+        </div>    
+          <ul class="sci">
+          <li style="--i:1">
+            <a href="https://www.instagram.com/ernane.jx/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>
+          <li style="--i:2">
+            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+          </li>
+          <li style="--i:3">
+            <a href="mailto:ernane.junior@ufrn.edu.br? subject='Sobre o Math Star'" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+          </li>
+        </ul> 
+      </div>
+        <div class="card">
+          <div class="content">
+            <div class="imgBx"><img src="imagens/imgpag/loader.gif" width="150" height="150" alt="Programador"></div>
+            <div class="contentBx"><h3>-<br><spam>Orientador</spam></h3></div>
+        </div>    
+          <ul class="sci">
+          <li style="--i:1">
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>
+          <li style="--i:2">
+            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+          </li>
+          <li style="--i:3">
+            <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+          </li>
+        </ul> 
+      </div>
+        
+    </div>
+  </section>
+    
+    
+  <footer>
+    <p> LoP - ECT © 2020.6 - Desenvolvido por Ernane Ferreira </p>
+  </footer>
+    <div id="voltarTopo">
+	  <a href="https://editor.p5js.org/ernane.junior25/present/8LRIMXu4Nl#nav" id="subir"> ▲</a>
+    </div>
+    <script>$(document).ready(function() {
+	$('#subir').click(function(){
+		$('html, body').animate({scrollTop:0}, 'slow');
+		return false;
+	});
+});</script>
+    
+    <div class="trailer">
+      <iframe width="752" height="380" src="https://www.youtube.com/embed/_oIXsCJxh4E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      
+      <img src="imagens/imgpag/close.png" class="close" onclick="toggle();">
+    </div>
+    <script type="text/javascript">
+      function toggle(){
+        var trailer = document.querySelector(".trailer");
+        trailer.classList.toggle("active");
+      }
+    </script>
+  
+
+</body></html>
